@@ -38,10 +38,13 @@
     }
   ],
   {
+{
   "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs18.x"
+    "api/**/*.php": {
+      "runtime": "now-php@1.0.0"
     }
   }
+}
+
 }
 }
