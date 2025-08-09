@@ -1,0 +1,60 @@
+{
+  "name": "proquiz-app",
+  "version": "1.0.0",
+  "description": "Multi-tenant AWS service quiz application with MySQL integration",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:production": "NODE_ENV=production npm run build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'Linting skipped - add ESLint configuration if needed'",
+    "deploy:vercel": "npm run build:production && vercel --prod",
+    "deploy:netlify": "npm run build:production && netlify deploy --prod",
+    "clean": "rm -rf dist node_modules/.vite"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@radix-ui/react-switch": "^1.0.3",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-badge": "^1.0.0",
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "sonner": "^1.0.3",
+    "recharts": "^2.8.0",
+    "motion": "^10.16.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/node": "^20.5.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "tailwindcss": "^4.0.0-alpha.11",
+    "@tailwindcss/vite": "^4.0.0-alpha.11"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "quiz",
+    "aws",
+    "multi-tenant",
+    "mysql",
+    "education"
+  ],
+  "author": "ProQuiz Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
