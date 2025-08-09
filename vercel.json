@@ -37,9 +37,11 @@
       ]
     }
   ],
+  {
   "functions": {
-    "app/api/**/*.ts": {
+    "api/**/*.js": {
       "runtime": "nodejs18.x"
     }
   }
+}
 }
